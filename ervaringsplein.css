@@ -13,15 +13,19 @@ body {
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    margin-top: 100px;
+    text-align: center;
 }
 h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 p {
     line-height: 1.6;
     margin-bottom: 15px;
+    text-align: center;
 }
 a {
     text-decoration: none;
@@ -70,6 +74,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     height: 4em;
+    overflow: visible;
 }
 
 .secondary-nav ul {
@@ -103,22 +108,36 @@ nav ul li a:hover {
 }
 
 .secondary-nav ul li a img:hover {
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 .secondary-nav ul li a img {
     display: inline-block; 
 }
 
+.secondary-nav .logo {
+    border-bottom: none !important;
+}
+
 .logo {
     width: 8em;
     height: auto;
     margin-right: auto;
+    border: none;
     border-bottom: none !important;
 }
 
 .logo:hover {
     border-bottom: none !important;
+}
+
+.hoofdmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
 }
 
 .dropdown {
@@ -129,12 +148,13 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: calc(100% -1px); 
+    top: calc(100% -1px) !important; 
     left: 0;
     background-color: #fff;
     min-width: 230px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    margin: 0;
     padding: 0;
     border: 1px solid #72727260;
     border-bottom-left-radius: 0.9em;
@@ -170,8 +190,34 @@ nav ul li a:hover {
     color: #333;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
+    line-height: normal;
 }
 
 .dropdown .dropbtn:hover {
     transition: background-color 0.3s ease;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.arrow.down {
+    transform: rotate(45deg);
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(-135deg); 
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: black;
+    text-decoration: none;
 }
