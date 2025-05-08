@@ -14,26 +14,42 @@
     </header>
     
     <div class="ervaringen-container">
+
             <div class="ervaring">
-                <h2>Monoculaire visie</h2>
-                <button></button>
+                <a href="monoculaire-visie.php">
+                    <h2>Monoculaire visie</h2> 
+                </a>
+                <button href=".php"></button>
             </div>
+
             <div class="ervaring">
-                <h2>Kleurenblindheid</h2>
-                <button></button>
+                <a href="kleurenblindheid.php">
+                        <h2>Kleurenblindheid</h2>
+                </a>
+                <button href=".php"></button>
             </div>
+
             <div class="ervaring">
-                <h2>Centraalzicht</h2>
-                <button></button>
+                <a href="centraalzicht.php">
+                    <h2>Centraal zicht</h2>
+                </a>
+                <button href="centraalzicht.php"></button>
             </div>
+
             <div class="ervaring">
-                <h2>Kokervisie</h2>
-                <button></button>
+                <a href="kokervisie.php">
+                    <h2>Kokervisie</h2>
+                </a>
+                <button href=".php"></button>
             </div>
+
             <div class="ervaring">
-                <h2>Ervaar ze allemaal</h2>
-                <button></button>
+                <a href="monoculaire-visie.php">
+                    <h2>Ervaar ze allemaal</h2>
+                </a>
+                <button href=".php"></button>
             </div>
+
         </div>
         <div class="welkom">
             <h1>Welkom op het ervaringsplein! Hier vind u een overzicht van 
