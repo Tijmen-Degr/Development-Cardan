@@ -40,7 +40,7 @@
                 <a href="kokervisie.php">
                     <h2>Kokervisie</h2>
                 </a>
-                <button href=".php"></button>
+                <button href="kokervisie.php"></button>
             </div>
 
             <div class="ervaring">
