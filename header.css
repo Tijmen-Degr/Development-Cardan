@@ -60,6 +60,7 @@ nav ul li a {
     color: #fff;
     text-align: right;
     border-bottom: 2px solid transparent;
+    
 }
 
 nav ul li a:hover {
@@ -129,9 +130,6 @@ nav ul li a:hover {
     border-bottom: none !important;
 }
 
-.logo:hover {
-    border-bottom: none !important;
-}
 
 .hoofdmenu {
     display: flex;
@@ -152,7 +150,7 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: calc(100% -1px) !important; 
+    top: calc(100% -1px); 
     left: 0;
     background-color: #fff;
     min-width: 230px; 
@@ -168,9 +166,9 @@ nav ul li a:hover {
 
 .dropdown-content a {
     text-decoration: none;
-    border-bottom: none !important;
+    border-bottom: none;
     display: flex; 
-    align-items: center; /* Vertically center the text */
+    align-items: center; 
     justify-content: flex-start; 
     padding: 15px 20px;
     background-color: #fff;
@@ -221,9 +219,65 @@ nav ul li a:hover {
 .language-switcher {
     display: flex;
     align-items: center;
-    margin-right: 8em;
-    color: black;
-    text-decoration: none;
+    margin-right: 1em;
     padding: 0 40px ;
     gap: 4px;
 }
+
+.language-switcher a {
+    color: black;
+    text-decoration: none !important;
+}
+
+.nl {
+    font-weight: bold;
+}
+
+.darkmode {
+    background-color: #120817;
+    color: #fff !important;
+}
+
+.darkmode a {
+    color: #fff !important;
+}
+
+.darkmode .ervaring h2 { 
+    color: #fff !important; 
+}
+
+.darkmode nav {
+    background-color: #271A2D;
+    color: #fff !important;
+}
+
+.darkmode .hoofdmenu{
+    background-color: #120817;
+}
+
+.darkmode .hoofdmenu:hover{
+    border-bottom: 1px solid #ddd;
+}
+
+.darkmode .secondary-nav {
+    background-color: #120817;
+    color: #fff;
+}
+
+.darkmode .dropdown-content a {
+    background-color: #120817;
+    color: #fff !important;
+}
+
+.darkmode .dropdown-content a:hover {
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+.darkORlight {
+    width: 1.2em;
+    height: auto;
+    margin-right: 7em;
+    padding: 0 ;
+}
+

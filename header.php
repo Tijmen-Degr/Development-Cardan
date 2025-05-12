@@ -65,9 +65,32 @@
                     <li><a href="https://www.cardan.com/contact">Contact</a></li>
                 </ul>
                 <div class="language-switcher">
-                    <a href="https://www.cardan.com">NL</a> |
+                    <a href="https://www.cardan.com" class="nl">NL</a> |
                     <a href="https://www.cardan.com/en">EN</a>
                 </div>
+                
+                <input type="image" src="images/lightmode_sun.png" class="darkORlight" onclick="switchmode()"/>
             </nav>
         </header>
+
+        <script>
+function switchmode() {
+    var element = document.body;
+    element.classList.toggle("darkmode");
+
+    // Get the button element
+    var button = document.querySelector('.darkORlight');
+    var logo = document.querySelector('.logo');
+
+    // Change the image based on the current mode
+    if (element.classList.contains("darkmode")) {
+        button.src = "images/darkmode_moon.png";
+        logo.src = "images/cardan-logo-darkmode.png";  
+    } else {
+        button.src = "images/lightmode_sun.png"; 
+        logo.src = "images/cardan-logo.png";
+    }
+}
+</script>
+
 </body>
