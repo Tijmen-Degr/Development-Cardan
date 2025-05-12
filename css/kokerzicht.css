@@ -157,5 +157,5 @@ a {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 90px, rgba(0, 0, 0, 0.85) 140px);
+  background: (circle at center, rgba(0, 0, 0, 0) 90px, rgba(0, 0, 0, 0.85) 140px);
 }
