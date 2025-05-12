@@ -16,7 +16,7 @@
     <div class="ervaringen-container">
 
             <div class="ervaring">
-                <a href="monoculaire-visie.php">
+                <a href="monoculair.php">
                     <h2>Monoculaire visie</h2> 
                 </a>
                 <button href=".php"></button>

@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your website description here">
-    <meta name="author" content="Your Name or Company">
-    <title>Cardan development header</title>
-    <link rel="stylesheet" href="header.css">
-</head>
 <body>
+<link rel="stylesheet" href="header.css">
 <header>
             <nav>
                 <ul>
