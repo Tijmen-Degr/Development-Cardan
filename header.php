@@ -1,7 +1,6 @@
 <body>
 <link rel="stylesheet" href="header.css">
 <header>
-<link rel="stylesheet" href="header.css">  
             <nav>
                 <ul>
                     <li><a href="https://mijn.cardan.com/login">Mijn Cardan</a></li>
@@ -9,14 +8,13 @@
                     <li><a href="services.php">Cookies</a></li>
                 </ul>
             </nav>  
-         <nav class="secondary-nav">
-    <ul>
-        <li>
-            <a href="https://www.cardan.com">
-                <img src="images/cardan-logo.png" alt="Cardan Logo" class="logo">
-            </a>
-        </li>
-    </ul>
+            <nav class="secondary-nav">
+                <li>
+                    <a href="https://www.cardan.com/">
+                        <img src="images/cardan-logo.png" alt="Cardan Logo" class="logo">
+                    </a>
+                </li>
+                <ul>
                     <div class="hoofdmenu">
                     <li class="dropdown">
                         <a href="" class="dropbtn">Onze diensten<i class="arrow down"></i></a>
@@ -71,11 +69,11 @@ function switchmode() {
     var element = document.body;
     element.classList.toggle("darkmode");
 
-  
+    // Get the button element
     var button = document.querySelector('.darkORlight');
     var logo = document.querySelector('.logo');
 
-
+    // Change the image based on the current mode
     if (element.classList.contains("darkmode")) {
         button.src = "images/darkmode_moon.png";
         logo.src = "images/cardan-logo-darkmode.png";  
