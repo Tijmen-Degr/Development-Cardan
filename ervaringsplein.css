@@ -36,7 +36,7 @@ a {
     justify-content: center;
     flex-direction: row;
     gap: 40px;
-    margin-top: 6em;
+    margin: 6em 0 10em;
     align-items: center;
 }
 
@@ -68,20 +68,25 @@ a {
     background-color: white;
 }
 
+.beperkingen-beschrijving {
+    background-color: #d8d0dc;
+}
+
 .beperkingen-beschrijving .beperking {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin-top: 100px;
+    width: 100%;
+    padding: 1em;   
+    margin: 1em;
     gap: 100px;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #d8d0dc;
 }
 
 .beperkingen-beschrijving .beperking:hover {
-    background-color: #4CAF50;
-    color: white; 
+    background-color: #d6c5dc;
 }
 
 .beperkingen-beschrijving .beperking h2,
@@ -95,8 +100,50 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80vh; 
+    height: auto; 
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     row-gap: 60px;
+}
+
+.welkom h1 {
+    font-size: 2.5em;
+    padding: 0 4em;
+}
+
+.uitleg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; 
+    margin: 4em auto;
+    width: 100%;
+    row-gap: 60px;
+    background-color: #E6F7EA;
+}
+
+.uitleg-text {
+    padding: 0 6em;
+    margin: 0 auto;
+}
+
+.cardan-vorm {
+  background-position: left center; 
+  background-repeat: no-repeat;
+  display: block; 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -50px; 
+  pointer-events: none; 
+  z-index: -1;
+}
+
+@media only screen and (min-width: 4000px) {
+  body {
+   background-image: url('../images/ken-jeong-cant-see-this.png');
+  }
 }

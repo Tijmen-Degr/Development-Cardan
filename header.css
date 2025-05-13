@@ -130,7 +130,6 @@ nav ul li a:hover {
     border-bottom: none !important;
 }
 
-
 .hoofdmenu {
     display: flex;
     justify-content: center;
@@ -281,3 +280,7 @@ nav ul li a:hover {
     padding: 0 ;
 }
 
+html, body {
+   margin: 0;
+   padding: 0;
+}

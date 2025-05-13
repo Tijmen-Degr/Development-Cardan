@@ -14,21 +14,42 @@
   <?php include 'header.php'; ?>
 
     <main>
-        <section class="intro">
-        <div class="intro-image">
-            <img src="images/monoculair-voorbeeld.png" alt="Visualisatie van monoculaire visie">
+    
+        <h1>Ervaar hoe het is om met monoculaire visie te leven</h1>
+        <p>Monoculaire visie is een visuele beperking waarbij iemand slechts één goed functionerend oog heeft, wat 
+        invloed heeft op het dieptezicht en het perifere zicht.</p>
+
+        <section class="informatie">
+            <h2>Wat is monoculaire visie?</h2>
+            <p>Monoculaire visie is een aandoening waarbij iemand slechts één goed functionerend oog heeft. Dit kan 
+            leiden tot problemen met dieptezicht en het waarnemen van afstanden. Mensen met monoculaire visie 
+            kunnen moeite hebben met het inschatten van de afstand tot objecten en kunnen ook problemen ondervinden 
+            bij het navigeren in onbekende omgevingen.</p>
+            <p>Bij monoculaire visie is het belangrijk om te begrijpen dat de hersenen zich aanpassen aan de
+            informatie die ze ontvangen van het goed functionerende oog. Dit kan leiden tot een waziger gezichtsveld, een verminderd dieptezicht 
+            en problemen met het waarnemen van afstanden.</p>
+
+            <div class="oorzaken">
+                <h2>Oorzaken van monoculaire visie</h2>
+                <p>Monoculaire visie kan verschillende oorzaken hebben, waaronder:</p>
+                <ul>
+                    <li>Oogletsel of trauma</li>
+                    <li>Aangeboren aandoeningen</li>
+                    <li>Oogziekten zoals glaucoom of cataract</li>
+                    <li>Neurologische aandoeningen</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="monoculair-image">
+            <img src="images/monoculaire_visie.png" alt="Visualisatie van monoculaire visie">
         </div>
-        <div class="intro-text">
-            <h1>Ervaar hoe het is om met monoculaire visie te leven</h1>
-            <p>Monoculaire visie is een visuele beperking waarbij iemand slechts één goed functionerend oog heeft, wat 
-                invloed heeft op het dieptezicht en het perifere zicht.</p>
-        </div>
+ 
         <button id="toggle-monoculair" class="toggle-btn">Ervaar Monoculaire Visie</button>
-        <div class="monoculair-description">
+        <div class="oorzaken">
             <p>Met deze ervaring kun je zelf ervaren hoe het is om met monoculaire visie te leven. Klik op de knop 
                 hierboven om de ervaring te starten.</p>
         </div>
-        </section>
 
         <section class="simulatie">
         <h2>Ervaar hoe het is om met monoculaire visie te shoppen</h2>

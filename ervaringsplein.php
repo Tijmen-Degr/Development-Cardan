@@ -24,7 +24,7 @@
 
             <div class="ervaring">
                 <a href="kleurenblindheid.php">
-                        <h2>Kleurenblindheid</h2>
+                    <h2>Kleurenblindheid</h2>
                 </a>
                 <button href=".php"></button>
             </div>
@@ -51,16 +51,40 @@
             </div>
 
         </div>
+
         <div class="welkom">
+
             <h1>Welkom op het ervaringsplein! Hier vind u een overzicht van 
                 de ervaringen voor visuele beperkingen met uitzondering van complete blindheid.
             </h1>
-            <h1>Door middel van interactieve simulaties, zoals het plaatsen van een bestelling 
+
+            <div class="uitleg">
+
+            <div class="as-bg as-bg--top">
+                <img src="../images/as-rechtsboven-boven-kort.png" alt="as-bg1" style="width: 100%; height: auto; margin: 2em 0;">
+            </div>
+
+            <div class="uitleg-text">	
+            <h2>Wat is het ervaringsplein?</h2>
+                <p>
+                    Het ervaringsplein is een platform dat mensen met visuele beperkingen de kans biedt om hun ervaringen te delen 
+                    en anderen bewust te maken van de uitdagingen waarmee zij dagelijks worden geconfronteerd. Het doel van het 
+                    ervaringsplein is om begrip en empathie te creëren voor mensen met visuele beperkingen, zodat bedrijven hun websites 
+                    inclusivier en toegankelijker kunnen maken.
+                </p>
+            <p>Door middel van interactieve simulaties, zoals het plaatsen van een bestelling 
                 op een webshop of het zoeken van het verschil tussen producten, krijgt u inzicht 
                 in de uitdagingen die mensen met een visuele beperking tegenkomen. Daarnaast 
                 leert u hoe webdevelopers websites toegankelijker kunnen maken voor iedereen.
-            </h1>
+            </p>
+            </div>
+
+            <div class="as-bg as-bg--bottom">
+                <img src="../images/as-linksonder-boven-kort.png" alt="as-bg2" style="width: 100%; height: auto; margin: 2em 0;">
+            </div>
+
         </div>
+
 
         <div class="beperkingen-beschrijving">
             <div class="beperking">

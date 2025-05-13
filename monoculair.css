@@ -10,13 +10,13 @@
     flex: 1; 
 }
 
-.intro-image, .ervaring-visualisatie {
+.monoculair-image, .ervaring-visualisatie {
     flex: 1; 
     text-align: center;
 }
 
-.intro-image img, .ervaring-visualisatie img {
-    max-width: 100%;
+.monoculair-image img, .ervaring-visualisatie img {
+    max-width: 40%;
     height: auto;
 }
 
