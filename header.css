@@ -251,7 +251,7 @@ nav ul li a:hover {
 }
 
 .darkmode .hoofdmenu{
-    background-color: #120817;
+    background-color: #0A080A;
 }
 
 .darkmode .hoofdmenu:hover{
@@ -259,7 +259,7 @@ nav ul li a:hover {
 }
 
 .darkmode .secondary-nav {
-    background-color: #120817;
+    background-color: #0A080A;
     color: #fff;
 }
 
@@ -270,6 +270,15 @@ nav ul li a:hover {
 
 .darkmode .dropdown-content a:hover {
     background-color: #3b3b3b;
+    color: #fff;
+}
+
+.darkmode .arrow.down {
+    
+}
+
+.darkmode .uitleg {
+    background-color: #19251C;
     color: #fff;
 }
 
