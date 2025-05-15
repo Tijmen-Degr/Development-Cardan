@@ -10,17 +10,12 @@
 
   <header>
     <div class="logo">StyleZZ</div>
-    <div class="theme-toggle">
-      <label for="themeSwitch">🌙 / ☀️</label>
-      <input type="checkbox" id="themeSwitch" />
-    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Collectie</a></li>
         <li><a href="#">Lookbook</a></li>
         <li><a href="#">Contact</a></li>
-        <li class="cart-link"><a href="#">🛒 Winkelwagen</a></li>
       </ul>
     </nav>
   </header>
@@ -38,36 +33,6 @@
         <h3>Void Oversize</h3>
         <p>€34,95</p>
       </div>
-      <div class="product">
-        <img src="images/alt-hoodie1.jpg" alt="Zwarte hoodie met statement" />
-        <h3>No Hope Hoodie</h3>
-        <p>€59,95</p>
-      </div>
-      <div class="product">
-        <img src="images/alt-pants1.jpg" alt="Zwarte broek met ketting" />
-        <h3>Chain Pants</h3>
-        <p>€49,95</p>
-      </div>
-      <div class="product">
-        <img src="images/alt-jacket1.jpg" alt="Leren jas met studs" />
-        <h3>Rebel Jacket</h3>
-        <p>€89,95</p>
-      </div>
-      <div class="product">
-        <img src="images/alt-boots1.jpg" alt="Combat boots zwart leer" />
-        <h3>Combat Boots</h3>
-        <p>€79,95</p>
-      </div>
-      <div class="product">
-        <img src="images/alt-beanie1.jpg" alt="Zwarte beanie met patch" />
-        <h3>Dead Inside Beanie</h3>
-        <p>€19,95</p>
-      </div>
-      <div class="product">
-        <img src="images/alt-rings1.jpg" alt="Zilveren ringen set" />
-        <h3>Silver Soul Rings</h3>
-        <p>€24,95</p>
-      </div>
     </section>
   </main>
 
@@ -75,6 +40,18 @@
     &copy; 2025 ALTWEAR. Underground gear for the fearless.
   </footer>
 
+  <div id="floating-cart">🛒</div>
+  <div id="kokerzichtOverlay" class="kokerzicht-overlay"></div>
+<!-- Scherm na 7de klik -->
+<div id="completionScreen" style="display: none; text-align: center;">
+  <h2>Ervaring Voltooid</h2>
+  <button id="restartBtn">Opnieuw</button>
+  <a href="kokervisie.php" id="restartBtn" class="button-link">Terug naar Kokerzicht</a>
+
+</div>
+
+
   <script src="js/mode.js"></script>
+
 </body>
 </html>

@@ -1,15 +1,8 @@
 :root {
-  --bg-color: #fff;
-  --text-color: #111;
+  --bg-color: #000000;
+  --text-color: #ffffff;
   --accent-color: #644d6f;
-  --card-bg: #f0f0f0;
-}
-
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #f0f0f0;
-  --accent-color: #bb86fc;
-  --card-bg: #1e1e1e;
+  --card-bg: #141414;
 }
 
 * {
@@ -28,7 +21,6 @@ body {
 }
 
 /* Header + Navigatie */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -68,22 +60,7 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Theme toggle */
-
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-#themeSwitch {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-}
-
 /* Main content */
-
 main {
   padding: 2rem;
 }
@@ -95,7 +72,6 @@ h2 {
 }
 
 /* Product grid */
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -131,7 +107,6 @@ h2 {
 }
 
 /* Footer */
-
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -139,4 +114,70 @@ footer {
   border-top: 1px solid #ccc;
   margin-top: 3rem;
   color: var(--text-color);
+}
+
+/* Winkelwagen */
+#floating-cart {
+  position: fixed;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#kokerzichtOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 10001;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    transparent 90px,
+    rgba(0, 0, 0, 1) 140px
+  );
+  transition: background 0.15s ease-out;
+}
+
+/* Completion screen */
+#completionScreen {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  z-index: 10001;
+  text-align: center;
+}
+
+
+
+
+.button-link:hover {
+  background-color: #005f2e;
+}
+#completionScreen button:hover {
+  background-color: #005f2e;
+}
+
+#completionScreen button {
+  background-color: #007f3f;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 1rem;
+  min-width: 200px;
+  transition: background-color 0.2s ease;
+}
+
+#completionScreen button:hover {
+  background-color: #005f2e;
 }

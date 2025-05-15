@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/kokerzicht.css" />
 </head>
 <body>
-<?php include 'header.php'; ?>
+<?php include 'header.php';?>
   <main>
     <section class="intro">
       <div class="intro-text">
@@ -19,7 +19,7 @@
           Dit kan worden veroorzaakt door aandoeningen zoals glaucoom, retinitis pigmentosa 
           of extreme stressreacties (bijvoorbeeld in noodsituaties).
         </p>
-        <button id="toggle-kokerzicht" class="toggle-btn">Ervaar kokervisie</button>
+  
       </div>
       <div class="intro-image">
         <img src="images/kokervisievb.png" alt="Kokervisie voorbeeld" />
@@ -32,7 +32,11 @@
         <p>
           Ervaar hoe het is om te kijken met kokervisie, probeer met je muis de website te navigeren en het winkelwagentje te vinden, de plek van het winkelwagentje is anders elke keer dat je de ervaring opnieuw start.
         </p>
-        <button class="toggle-btn">Start Ervaring</button>
+      
+         <a href="winkel.php" class="start-experience">
+  <button id="toggle-button" class="start-btn">Start de ervaring</button>
+</a>
+
       </div>
       <div class="experience-visual">
         <img src="images/winkelwagen.png" alt="Winkelwagen ervaring" width="300" />
@@ -63,6 +67,8 @@
   <footer class="main-footer">
     <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
   </footer>
+
+
 
   <script src="js/kokerzicht.js" defer></script>
 </body>
