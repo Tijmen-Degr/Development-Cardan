@@ -20,6 +20,13 @@
         invloed heeft op het dieptezicht en het perifere zicht.</p>
 
         <section class="informatie">
+
+        <div class="monoculair-image">
+            <img src="images/monoculaire_visie.png" alt="Visualisatie van monoculaire visie">
+        </div>
+
+        <div class="informatie-text">
+
             <h2>Wat is monoculaire visie?</h2>
             <p>Monoculaire visie is een aandoening waarbij iemand slechts één goed functionerend oog heeft. Dit kan 
             leiden tot problemen met dieptezicht en het waarnemen van afstanden. Mensen met monoculaire visie 
@@ -39,11 +46,8 @@
                     <li>Neurologische aandoeningen</li>
                 </ul>
             </div>
-        </section>
 
-        <div class="monoculair-image">
-            <img src="images/monoculaire_visie.png" alt="Visualisatie van monoculaire visie">
-        </div>
+        </section>
  
         <button id="toggle-monoculair" class="toggle-btn">Ervaar Monoculaire Visie</button>
         <div class="oorzaken">
