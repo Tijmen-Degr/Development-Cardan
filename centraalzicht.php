@@ -1,62 +1,68 @@
-<?php ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Centraal Zichtverlies Ervaring</title>
+  <title>Ervaar Verlies van Centraal Zicht</title>
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/centraalzicht.css" />
+  <link rel="stylesheet" href="css/kokerzicht.css" />
 </head>
-
 <body>
-<?php include 'header.php'; ?>
-
-<main>
-  <section class="intro">
-    <div class="intro-text">
-      <h1>Ervaar hoe het is om verlies van centraal zicht te hebben</h1>
-      <p>Bij verlies van centraal zicht ontstaat er een zwart vlekje in het midden van het gezichtsveld, wat het moeilijk maakt om te focussen op tekst of gezichten.</p>
-    </div>
-    <div class="intro-image">
-      <img src="images/centraalzicht-voorbeeld.png" alt="Visualisatie van verlies van centraal zicht" />
-    </div>
-    <button id="toggle-centraalzicht" class="toggle-btn">Ervaar Centraal Zichtverlies</button>
-    <div class="kokerzicht-description">
-      <p>Klik op de knop hierboven om een simulatie te starten van hoe het is om met verlies van centraal zicht te leven.</p>
-    </div>
-  </section>
-
-  <section class="experience">
-    <h2>Ervaring: Lees een Tekst</h2>
-    <p>Probeer deze tekst te lezen terwijl je centrale zicht geblokkeerd is.</p>
-    <div class="experience-visual">
-      <p>
-        Digitale toegankelijkheid is essentieel voor een inclusieve samenleving. Iedereen, ongeacht beperking, moet websites kunnen gebruiken. 
-        De WCAG-richtlijnen helpen ontwikkelaars en ontwerpers om toegankelijke oplossingen te bouwen.
-      </p>
-    </div>
-  </section>
-
-  <section class="tips">
-    <h2>Do’s en Don’ts voor Centraal Zichtverlies</h2>
-    <div class="tips-content">
-      <div class="tip good">
-        <p><strong>Goed voorbeeld:</strong> tekst met duidelijke koppen, grote letters en veel witruimte.</p>
+<?php include 'header.php';?>
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <h1>Ervaar een website met een verstoord centraal zicht </h1>
+        <p>
+         Bij verstoring van het centraal zicht wordt het scherpe, gedetailleerde zicht in het midden van het blikveld aangetast en kan het zicht wazig of vervormd zijn, kunnen rechte lijnen golvend lijken of kan er een donkere of blinde vlek (scotoom) in het midden van het gezichtsveld ontstaan
+        </p>
       </div>
-      <div class="tip bad">
-        <p><strong>Slecht voorbeeld:</strong> lange paragrafen zonder onderbrekingen of visuele aanwijzingen.</p>
+      <div class="intro-image">
+        <img src="images/centralezichtvb.png" alt="Verlies van centraal zicht voorbeeld" />
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<div class="central-vision-overlay"></div>
+    <section class="experience">
+      <div class="experience-text">
+        <h1>Ervaring: Navigeer de website</h1>
+        <p>
+          Deze ervaring is heel simpel, probeer het rood-zwarte shirt te zoeken en te kopen, het enige wat je hindert in je zoektocht is het vervagen/verlies van je centrale zicht.
+           Probeer met deze beperking op de bestel knop te klikken. 
+        </p>
+        <a href="winkel_centraal.php" class="start-experience">
+          <button id="toggle-button" class="start-btn">Start de ervaring</button>
+        </a>
+      </div>
+      <div class="experience-visual">
+        <img src="images/fakestore.png" alt="Bestelervaring" width="300" />
+      </div>
+    </section>
 
-<footer class="main-footer">
-  <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
-</footer>
+    <section class="tips">
+      <h2>Do’s en Don’t’s bij Centraal Zichtverlies</h2>
+      <div class="tips-content">
+        <div class="tip bad">
+          <img src="images/foutcs.png" alt="Slecht voorbeeld" />
+          <p>
+            Hier kunnen mensen die hun centraal zicht verloren zijn heel slecht zien wat er nou eigenlijk staat, en hoeveel de waterfles kost
+          </p>
+        </div>
+        <div class="tip good">
+          <img src="images/goedcs.png" alt="Goed voorbeeld" />
+          <p>
+          Hier is alles overzichtelijk te zien, wat het product is en wat de prijs is.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<script src="js/centraalzicht.js"></script>
+  <div id="kokerzichtOverlay" class="kokerzicht-overlay"></div>
+
+  <footer class="main-footer">
+    <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
+  </footer>
+
+  <script src="js/centraalzicht.js" defer></script>
 </body>
 </html>

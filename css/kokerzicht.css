@@ -86,30 +86,20 @@ a {
   text-align: left;
 }
 
-.toggle-btn,
-.cta-button {
-  background-color: #007f3f;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 1rem;
-  display: block;
-  margin-left: 0;
-}
+
 
 .kokerzicht-overlay {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* <-- dit mag blijven */
   z-index: 9999;
+  transition: background 0.1s ease;
 }
+
 
 .kokerzicht-overlay.active {
   display: block;
@@ -225,6 +215,41 @@ body.darkmode .main-footer {
   background-color: #1e1e1e;
   color: #ffffff;
 }
+
+.start-experience {
+  text-decoration: none; 
+}
+
+.start-btn,
+.cta-button,
+.toggle-btn {
+  background-color: #007f3f; 
+  color: white; 
+  border: none; 
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  margin-top: 1rem; 
+  display: block; 
+  margin-left: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.start-btn:hover,
+.cta-button:hover,
+.toggle-btn:hover {
+  background-color: #005f2d; 
+  transform: scale(1.05); 
+}
+
+.start-btn:active, 
+.cta-button:active,
+.toggle-btn:active {
+  transform: scale(0.98); 
+}
+
 
 @media screen and (max-width: 1024px) {
   .intro,
