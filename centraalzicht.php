@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ervaar Verlies van Centraal Zicht</title>
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/kokerzicht.css" />
+  <link rel="stylesheet" href="css/centraalzicht.css" />
 </head>
 <body>
 <?php include 'header.php';?>
@@ -43,25 +43,22 @@
       <div class="tips-content">
         <div class="tip bad">
           <img src="images/foutcs.png" alt="Slecht voorbeeld" />
-          <p>
+          <h3>
             Hier kunnen mensen die hun centraal zicht verloren zijn heel slecht zien wat er nou eigenlijk staat, en hoeveel de waterfles kost
-          </p>
+          </h3>
         </div>
         <div class="tip good">
-          <img src="images/goedcs.png" alt="Goed voorbeeld" />
-          <p>
+          <img src="images/do-cs.png" alt="Goed voorbeeld" />
+          <h3>
           Hier is alles overzichtelijk te zien, wat het product is en wat de prijs is.
-          </p>
+          </h3>
         </div>
       </div>
     </section>
   </main>
 
   <div id="kokerzichtOverlay" class="kokerzicht-overlay"></div>
-
-  <footer class="main-footer">
-    <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
-  </footer>
+<?php include 'footer.php';?>
 
   <script src="js/centraalzicht.js" defer></script>
 </body>

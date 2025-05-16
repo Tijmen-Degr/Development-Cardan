@@ -130,6 +130,7 @@ nav ul li a:hover {
     border-bottom: none !important;
 }
 
+
 .hoofdmenu {
     display: flex;
     justify-content: center;
@@ -251,15 +252,15 @@ nav ul li a:hover {
 }
 
 .darkmode .hoofdmenu{
-    background-color: #0A080A;
+    background-color: #120817;
 }
 
-.darkmode nav ul li a:hover{
-    border-bottom: 1px solid #ddd;  
+.darkmode .hoofdmenu:hover{
+    border-bottom: 1px solid #ddd;
 }
 
 .darkmode .secondary-nav {
-    background-color: #0A080A;
+    background-color: #120817;
     color: #fff;
 }
 
@@ -273,11 +274,6 @@ nav ul li a:hover {
     color: #fff;
 }
 
-.darkmode .uitleg {
-    background-color: #19251C;
-    color: #fff;
-}
-
 .darkORlight {
     width: 1.2em;
     height: auto;
@@ -285,7 +281,8 @@ nav ul li a:hover {
     padding: 0 ;
 }
 
+
 html, body {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }

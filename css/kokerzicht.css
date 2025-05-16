@@ -329,3 +329,63 @@ body.darkmode .main-footer {
     font-size: 14px;
   }
 }
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  background-color: #e0e0e0;
+  margin: 40px auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-handle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: #007f3f;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: left 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.slider-label {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none;
+}
+
+.slider-label.left {
+  left: 0;
+}
+
+.slider-label.right {
+  right: 0;
+}
+.slider-container,
+.slider-label,
+.slider-handle {
+  user-select: none;       /* voorkomt tekstselectie */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;    /* voorkomt interactie met tekst zelf */
+}
+
+.slider-handle {
+  pointer-events: all;     /* maar wél nog sleefbaar */
+}
