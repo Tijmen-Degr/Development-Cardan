@@ -46,31 +46,29 @@
     <section class="tips">
       <h2>Do’s en Don’t’s voor Kokervisie</h2>
       <div class="tips-content">
+
         <div class="tip bad">
-          <img src="images/fout.png" alt="Slecht voorbeeld" style="width:100%;"/>
-          <p>
+          <img src="images/Dont-Kokerzicht.png" alt="Slecht voorbeeld" style="width:100%;"/>
+          <h3>
             Hier is het niet te zien wat er nou fout is, omdat het bovenaan word aangegeven, kunnen mensen met kokervisie niet zien of ze het fout hebben
-          </p>
+          </h3>
         </div>
         <div class="tip good">
-          <img src="images/goed.png" alt="Goed voorbeeld" style="width:100%;"/>
-          <p>
-            Hier is juist goed te zien wat er fout is, door de tekst er direct onder te zetten en het wachtwoord vak rood te maken.
-          </p>
+          <img src="images/Do-Kokerzicht.png" alt="Goed voorbeeld" style="width:100%;"/>
+          <h3>
+            Hier is juist goed te zien wat er fout is, door de tekst er direct onder te zetten, specifieke tekst neer te zetten en het wachtwoord vak rood te maken.
+          </h3>
         </div>
       </div>
     </section>
   </main>
 
   <div id="kokerzichtOverlay" class="kokerzicht-overlay"></div>
-
-  <footer class="main-footer">
-    <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
-  </footer>
+  <?php include 'footer.php';?>
 
 
 
-  <script src="js/kokerzicht.js" defer></script>
+  <script src="js/kokervisie.js" defer></script>
 </body>
 </html>
 
