@@ -91,6 +91,30 @@
     </div>
 
     <div class="product">
+        <img src="images/producten/FFDP_Zombie_Kill_Xmas_Red.jpg" alt="Five Finger Death Punch 'Zombie Kill Xmas' (Red) T-Shirt" />
+        <h3>"Five Finger Death Punch 'Zombie Kill Xmas' (Red) T-Shirt"</h3>
+        <p>€22,50</p>
+    </div>
+
+        <div class="product">
+        <img src="images/producten/wrong_side_of_heaven_ffdp.jpg" alt=" Five Finger Death Punch 'Wrong Side Of Heaven' T-Shirt" />
+        <h3>"Five Finger Death Punch 'Wrong Side Of Heaven' T-Shirt"</h3>
+        <p>€22,50</p>
+    </div>
+
+        <div class="product">
+        <img src="images/producten/AA_purple.jpg" alt=" Asking Alexandria Night Slime" />
+        <h3>"Asking Alexandria Night Slime T-shirt"</h3>
+        <p>€22,50</p>
+    </div>
+
+        <div class="product">
+        <img src="images/producten/T-shirts-Flogging-Molly-Flogging-Molly-T-shirt-Vintage.jpg" alt=" Flogging Molly T-shirt Vintage" />
+        <h3>" Flogging Molly T-shirt Vintage Irish Punk"</h3>
+        <p>€22,50</p>
+    </div>
+
+        <div class="product">
         <img src="images/producten/death_metal.jpg" alt="Death metal shirt" />
         <h3>"Death Metal Unicorn" T-shirt lichtroze van Tierisch"</h3>
         <p>€22,50</p>
@@ -103,9 +127,15 @@
     &copy; 2025 ALTWEAR. Underground gear for the fearless.
 </footer>
 
+<div id="completionScreen" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10001; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+  <h2 style="color:white;">Gefeliciteerd! Je hebt 5 keer goed geraden!</h2>
+  <button id="restartBtn">Opnieuw spelen</button>
+  <button id="backBtn">Terug naar uitleg</button>
 </div>
 
 <script>
+let goedCount = 0;
+
 document.addEventListener('DOMContentLoaded', function() {
     const maten = ['S', 'M', 'L'];
     const minPrijs = 19.95;
@@ -179,16 +209,44 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (goed) {
-                product.style.border = "4px solid #2ecc40"; 
-                setTimeout(() => {
-                    window.location.reload();
-                }, 800); 
+                product.style.border = "4px solid #2ecc40";
+                goedCount++;
+                if (goedCount >= 5) {
+                    setTimeout(() => {
+                        document.getElementById('completionScreen').style.display = 'flex';
+                    }, 600);
+                } else {
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 800);
+                }
             } else {
-                product.style.border = "4px solid #e74c3c"; 
+                product.style.border = "4px solid #e74c3c";
             }
         });
     });
 });
+
+
+    // Dynamische blur op main
+    let blur = 0;
+    const maxBlur = 8; // maximaal 8px blur
+    const main = document.querySelector('main');
+    setInterval(() => {
+        if (blur < maxBlur) {
+            blur += 0.2; // verhoog blur elke seconde
+            main.style.filter = `blur(${blur}px)`;
+        }
+    }, 1000);
+
+    document.getElementById('restartBtn').addEventListener('click', function() {
+    goedCount = 0;
+    document.getElementById('completionScreen').style.display = 'none';
+    window.location.reload();
+    });
+    document.getElementById('backBtn').addEventListener('click', function() {
+        window.location.href = 'monoculair.php';
+    });
 </script>
 
 </body>

@@ -1,0 +1,33 @@
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const maten = ['S', 'M', 'L'];
+    const minPrijs = 19.95;
+    const maxPrijs = 29.99;
+
+    const grid = document.querySelector('.product-grid');
+    const producten = Array.from(grid.querySelectorAll('.product'));
+
+    // Shuffle producten (Fisher-Yates)
+    for (let i = producten.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        grid.appendChild(producten[j]);
+    }
+
+    // Geef elke product een random maat en prijs
+    producten.forEach(function(product) {
+        const maat = maten[Math.floor(Math.random() * maten.length)];
+        const prijs = (Math.random() * (maxPrijs - minPrijs) + minPrijs).toFixed(2);
+
+        let h3 = product.querySelector('h3');
+        if (h3) {
+            h3.textContent += ` (maat ${maat})`;
+        }
+        let p = product.querySelector('p');
+        if (p) {
+            p.textContent = `€${prijs}`;
+        }
+        product.setAttribute('data-maat', maat);
+        product.setAttribute('data-prijs', prijs);
+    });
+});
+</script>

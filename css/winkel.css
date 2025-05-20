@@ -155,9 +155,6 @@ footer {
   text-align: center;
 }
 
-
-
-
 .button-link:hover {
   background-color: #005f2e;
 }
@@ -183,7 +180,7 @@ footer {
 }
 
 .opdracht {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 2rem 0 1rem 0;
     text-align: center;
