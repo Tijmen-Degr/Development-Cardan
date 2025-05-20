@@ -29,7 +29,7 @@
           Deze ervaring is heel simpel, probeer het rood-zwarte shirt te zoeken en te kopen, het enige wat je hindert in je zoektocht is het vervagen/verlies van je centrale zicht.
            Probeer met deze beperking op de bestel knop te klikken. 
         </p>
-        <a href="winkel_centraal.php" class="start-experience">
+        <a href="centraalzichtwinkel.php" class="start-experience">
           <button id="toggle-button" class="start-btn">Start de ervaring</button>
         </a>
       </div>
@@ -57,9 +57,8 @@
     </section>
   </main>
 
-  <div id="kokerzichtOverlay" class="kokerzicht-overlay"></div>
 <?php include 'footer.php';?>
 
-  <script src="js/centraalzicht.js" defer></script>
+
 </body>
 </html>
