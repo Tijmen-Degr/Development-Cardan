@@ -6,6 +6,13 @@
   </div>
   <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
 <style>
+
+.main-footer {
+  background-color: #f8f9fa;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
   .slider-container {
     max-width: 400px;
     margin: 1rem auto;
@@ -17,21 +24,21 @@
     justify-content: space-between;
     position: relative;
     font-weight: 600;
-    font-size: 1rem; /* Iets kleiner dan 1.1rem */
+    font-size: 1rem; 
     user-select: none;
   }
   .slider-label {
     flex: 1;
-    max-width: 40%; /* max 40% breedte per label */
+    max-width: 40%;
     padding: 0 10px;
     text-align: center;
     color: #444;
     user-select: none;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* tekst afkappen met ... als het te lang is */
+    text-overflow: ellipsis; 
     transition: color 0.3s ease;
-    font-size: 0.9rem; /* iets kleiner font */
+    font-size: 0.9rem; 
   }
   .slider-label:hover {
     color: #000;
@@ -64,7 +71,6 @@
     const leftLabel = document.getElementById("leftLabel");
     const rightLabel = document.getElementById("rightLabel");
 
-    // Jouw custom navigatie config per pagina
     const pageConfigs = {
       "/monoculaire_visie.php": {
         leftLabel: "🏠 Ervaringsplein",
@@ -100,13 +106,11 @@
       rightUrl: "#"
     };
 
-    // Set labels & urls
     leftLabel.textContent = config.leftLabel;
     leftLabel.dataset.url = config.leftUrl;
     rightLabel.textContent = config.rightLabel;
     rightLabel.dataset.url = config.rightUrl;
 
-    // Click navigatie op labels
     leftLabel.addEventListener("click", () => {
       if(config.leftUrl && config.leftUrl !== "#") {
         window.location.href = config.leftUrl;

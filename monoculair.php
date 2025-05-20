@@ -50,9 +50,17 @@
         </section>
         
         <section class="simulatie">
-        <h2>Ervaar hoe het is om met monoculaire visie te shoppen</h2>
-        <p> Probeer hier de ... (kledingstuk) te vinden </p>
+            <section class="simulatie-text">
+            <h2>Ervaar hoe het is om met monoculaire visie te shoppen</h2>
+            <p> Probeer hier de ... (kledingstuk) te vinden </p>
+            </section>
         <div class="ervaring-visualisatie">
             <div class="monoculair-vision"></div>
             <a href="mono_simulatie.php" class="find-item-button">Druk hier om te beginnen!</a>
         </div>
+
+        <?php include 'footer.php';?>
+        </section>
+    </main>
+</body>
+</html>

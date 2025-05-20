@@ -19,7 +19,12 @@ p {
 }
 
 .intro-text, .simulatie-text {
-    flex: 1; 
+    flex: 1;
+    padding: 2em 0;
+}
+
+.simulatie {
+    text-align: center;
 }
 
 .monoculair-image, .ervaring-visualisatie {
