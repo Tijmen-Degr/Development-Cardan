@@ -82,7 +82,7 @@
     const rightLabel = document.getElementById("rightLabel");
 
     const pageConfigs = {
-      "/monoculaire_visie.php": {
+      "/monoculair.php": {
         leftLabel: "🏠 Ervaringsplein",
         leftUrl: "ervaringsplein.php",
         rightLabel: "Kleurenblindheid ➡",
