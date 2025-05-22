@@ -127,7 +127,7 @@
     &copy; 2025 ALTWEAR. Underground gear for the fearless.
 </footer>
 
-<div id="completionScreen" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:10001; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+<div id="completionScreen">
   <h2 style="color:white;">Gefeliciteerd! Je hebt 5 keer goed geraden!</h2>
   <button id="restartBtn">Opnieuw spelen</button>
   <button id="backBtn">Terug naar uitleg</button>
