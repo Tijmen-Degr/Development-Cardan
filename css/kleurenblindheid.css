@@ -102,3 +102,64 @@ button {
     list-style: none;
     padding-left: 0;
 }
+
+.start-experience {
+  text-decoration: none; 
+}
+
+.start-btn,
+.cta-button,
+.toggle-btn {
+  background-color: #007f3f; 
+  color: white; 
+  border: none; 
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  margin-top: 1rem; 
+  display: block; 
+  margin-left: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  gap: 20px;
+}
+
+.experience-visual {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-visual img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.experience h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.experience p {
+  max-width: 500px;
+  text-align: left;
+}
+.experience-text {
+  text-align: left;
+  align-self: flex-start;
+}
+.experience .experience-text h1,
+.experience .experience-text p {
+  text-align: left !important;
+  padding: 0; 
+}
