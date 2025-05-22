@@ -34,7 +34,7 @@
         </a>
       </div>
       <div class="experience-visual">
-        <img src="images/fakestore.png" alt="Bestelervaring" width="300" />
+        <img src="images/StyleZZ.png" alt="Bestelervaring" width="300" />
       </div>
     </section>
 

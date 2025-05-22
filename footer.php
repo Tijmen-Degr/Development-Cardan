@@ -90,7 +90,7 @@
       },
       "/kleurenblindheid.php": {
         leftLabel: "⬅ Monoculaire visie",
-        leftUrl: "monoculaire_visie.php",
+        leftUrl: "monoculair.php",
         rightLabel: "Centraal zicht ➡",
         rightUrl: "centraalzicht.php"
       },

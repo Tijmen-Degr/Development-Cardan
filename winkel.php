@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ALTWEAR - Underground Webshop</title>
+  <title>StyleZZ - Underground Webshop</title>
   <link rel="stylesheet" href="css/winkel.css" />
 </head>
 <body>
@@ -123,7 +123,7 @@
   </main>
 
   <footer>
-    &copy; 2025 ALTWEAR. Underground gear for the fearless.
+    &copy; 2025 StyleZZ. Underground gear for the fearless.
   </footer>
 
   <div id="floating-cart">🛒</div>
