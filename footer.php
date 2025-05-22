@@ -61,6 +61,16 @@
     box-shadow: 0 0 6px rgba(0,0,0,0.3);
     transition: left 0.3s ease;
   }
+
+  .darkmode   .slider-container {
+    background-color: #120817;
+    color: #fff;
+}
+
+.darkmode .main-footer {
+    background-color: #120817;
+    color: #fff;
+}
 </style>
 
 
@@ -187,5 +197,23 @@
     document.addEventListener("touchmove", (e) => duringDrag(e.touches[0].clientX));
     document.addEventListener("touchend", endDrag);
   });
+
+function switchmode() {
+    var element = document.body;
+    element.classList.toggle("darkmode");
+
+    // Get the button element
+    var button = document.querySelector('.darkORlight');
+    var logo = document.querySelector('.logo');
+
+    // Change the image based on the current mode
+    if (element.classList.contains("darkmode")) {
+        button.src = "images/darkmode_moon.png";
+        logo.src = "images/cardan-logo-darkmode.png";  
+    } else {
+        button.src = "images/lightmode_sun.png"; 
+        logo.src = "images/cardan-logo.png";
+    }
+}
   </script>
 </footer>
