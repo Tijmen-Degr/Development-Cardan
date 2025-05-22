@@ -52,102 +52,113 @@
     </div>
 
     <section class="product-grid">
+<div class="product" data-kleur="zwart" data-type="shirt">
+    <img src="images/producten/electric_callboys_thomas.webp" alt="Electric callboys choo choo shirt" />
+    <h3>"Choo Choo" T-shirt zwart van Electric Callboy </h3>
+    <p>€21,99</p>
+</div>
 
-      <div class="product">
-        <img src="images/producten/electric_callboys_thomas.webp" alt="Electric callboys choo choo shirt" />
-        <h3>"Choo Choo" T-shirt zwart van Electric Callboy </h3>
-        <p>€21,99</p>
-      </div>
+<div class="product" data-kleur="wit" data-type="shirt">
+    <img src="images/producten/nirvana_heart_shape_box.webp" alt="Nirvana shirt" />
+    <h3>"Heart Shape Box" T-shirt wit van Nirvana</h3>
+    <p>€23,25</p>
+</div>
 
-      <div class="product">
-        <img src="images/producten/soad_toxicity.webp" alt="System of a down toxicity shirt" />
-        <h3>"Toxicity" T-shirt zwart van System Of A Down </h3>
-        <p>€27,99</p>
-      </div>
+<div class="product" data-kleur="geel" data-type="shirt">
+    <img src="images/producten/beastie_boys.webp" alt="Beastie Boys shirt" />
+    <h3>"Logo" T-shirt van Beastie Boys </h3>
+    <p>€23,85</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/nirvana_heart_shape_box.webp" alt="Nirvana shirt" />
-        <h3>"Heart Shape Box" T-shirt wit van Nirvana</h3>
-        <p>€23,25</p>
-    </div>
+<div class="product" data-kleur="beige" data-type="shirt">
+    <img src="images/producten/motörhead.jpg" alt="Motörhead shirt" />
+    <h3>"Logo England" T-shirt grijs van Motörhead </h3>
+    <p>€21,45</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/rammstein.jpg" alt="Rammstein shirt" />
-        <h3>"Broken Logo II" T-shirt olijf van Rammstein </h3>
-        <p>€23,85</p>
-    </div>
+<div class="product" data-kleur="beige" data-type="shirt">
+    <img src="images/producten/Slipknot.webp" alt="Slipknot beige shirt" />
+    <h3>"EMP Signature Collection" T-shirt beige van Slipknot </h3>
+    <p>€25,80</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/motörhead.jpg" alt="Motörhead shirt" />
-        <h3>"Logo England" T-shirt grijs van Motörhead </h3>
-        <p>€21,45</p>
-    </div>
+<div class="product" data-kleur="rood" data-type="shirt">
+    <img src="images/producten/FFDP_Zombie_Kill_Xmas_Red.jpg" alt="Five Finger Death Punch 'Zombie Kill Xmas' (Red) T-Shirt" />
+    <h3>"Five Finger Death Punch 'Zombie Kill Xmas'T-Shirt"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/Slipknot.webp" alt="Slipknot beige shirt" />
-        <h3>"EMP Signature Collection" T-shirt beige van Slipknot </h3>
-        <p>€25,80</p>
-    </div>
+<div class="product" data-kleur="paars" data-type="shirt">
+    <img src="images/producten/AA_purple.jpg" alt=" Asking Alexandria Night Slime" />
+    <h3>"Asking Alexandria Night Slime T-shirt"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/korn.webp" alt="OMG IT'S KORN IDA URGHATATA SLI KA PURAA shirt" />
-        <h3>"New Doll" T-shirt zwart van Korn </h3>
-        <p>€23,75</p>
-    </div>
+<div class="product" data-kleur="groen" data-type="shirt">
+    <img src="images/producten/T-shirts-Flogging-Molly-Flogging-Molly-T-shirt-Vintage.jpg" alt=" Flogging Molly T-shirt Vintage" />
+    <h3>" Flogging Molly T-shirt Vintage Irish Punk"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/wbtbwb.jpg" alt="We butter the bread with butter shirt" />
-        <h3>We Butter The Bread With Butter - Schnitte - Hoodie</h3>
-        <p>€21,95</p>
-    </div>
+<div class="product" data-kleur="roze" data-type="shirt">
+    <img src="images/producten/death_metal.jpg" alt="Death metal shirt" />
+    <h3>"Death Metal Unicorn" T-shirt lichtroze van Tierisch"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/brojob.jpg" alt="Brojob cockzilla shirt" />
-        <h3>Brojob - Cockzilla - T-Shirt</h3>
-        <p>€24,95</p>
-    </div>
+<div class="product" data-kleur="geel" data-type="broek">
+    <img src="images/producten/cargo_geel.jpg" alt="Gele cargo broek kort" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/brojob_fist.jpg" alt="Brojob Fist your friends shirt" />
-        <h3>Brojob - Fist your friends - T-Shirt</h3>
-        <p>€24,85</p>
-    </div>
+<div class="product" data-kleur="groen" data-type="broek">
+    <img src="images/producten/cargo_groen.jpg" alt="Groene cargo broek kort" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/anal_cunt.jpg" alt="Anal Cunt shirt" />
-        <h3>Anal Cunt - T-Shirt</h3>
-        <p>€22,50</p>
-    </div>
+<div class="product" data-kleur="oranje" data-type="broek">
+    <img src="images/producten/cargo_oranje.jpg" alt="Oranje cargo broek kort" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€22,50</p>
+</div>
 
-    <div class="product">
-        <img src="images/producten/FFDP_Zombie_Kill_Xmas_Red.jpg" alt="Five Finger Death Punch 'Zombie Kill Xmas' (Red) T-Shirt" />
-        <h3>"Five Finger Death Punch 'Zombie Kill Xmas' (Red) T-Shirt"</h3>
-        <p>€22,50</p>
-    </div>
+<div class="product" data-kleur="paars" data-type="broek">
+    <img src="images/producten/cargo_paars.jpg" alt="Paarse cargo broek kort" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€22,50</p>
+</div>
 
-        <div class="product">
-        <img src="images/producten/wrong_side_of_heaven_ffdp.jpg" alt=" Five Finger Death Punch 'Wrong Side Of Heaven' T-Shirt" />
-        <h3>"Five Finger Death Punch 'Wrong Side Of Heaven' T-Shirt"</h3>
-        <p>€22,50</p>
-    </div>
+<div class="product" data-kleur="rood" data-type="broek">
+    <img src="images/producten/cargo_rood.jpg" alt="Rode cargo broek kort" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€22,50</p>
+</div>
 
-        <div class="product">
-        <img src="images/producten/AA_purple.jpg" alt=" Asking Alexandria Night Slime" />
-        <h3>"Asking Alexandria Night Slime T-shirt"</h3>
-        <p>€22,50</p>
-    </div>
+<div class="product" data-kleur="zwart" data-type="broek">
+    <img src="images/producten/cargo_zwart.webp" alt="Zwarte cargo broek" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€22,50</p>
+</div>
 
-        <div class="product">
-        <img src="images/producten/T-shirts-Flogging-Molly-Flogging-Molly-T-shirt-Vintage.jpg" alt=" Flogging Molly T-shirt Vintage" />
-        <h3>" Flogging Molly T-shirt Vintage Irish Punk"</h3>
-        <p>€22,50</p>
-    </div>
+<div class="product" data-kleur="groen" data-type="shirt">
+    <img src="images/producten/green_day.webp" alt="Green Day shirt" />
+    <h3>"Green Day T-shirt"</h3>
+    <p>€22,50</p>
+</div>
 
-        <div class="product">
-        <img src="images/producten/death_metal.jpg" alt="Death metal shirt" />
-        <h3>"Death Metal Unicorn" T-shirt lichtroze van Tierisch"</h3>
-        <p>€22,50</p>
-    </div>
+<div class="product" data-kleur="geel" data-type="shirt">
+    <img src="images/producten/anthrax.webp" alt="Anthrax shirt" />
+    <h3>""Not Man" T-shirt van Anthrax "</h3>
+    <p>€22,50</p>
+</div>
+
+<div class="product" data-kleur="blauw" data-type="shirt">
+    <img src="images/producten/dropkick_murphys.jpg" alt="Dropkick Murphys shirt" />
+    <h3>"Fist Up" T-shirt van Dropkick Murphys</h3>
+    <p>€22,50</p>
+</div>
 
     </section>
   </main>
@@ -161,6 +172,8 @@
   <button id="restartBtn">Opnieuw spelen</button>
   <button id="backBtn">Terug naar uitleg</button>
 </div>
+
+<script src="js/kleurenblindheid.js"></script>
 
 </body>
 </html>
