@@ -19,14 +19,14 @@
                 <a href="monoculair.php">
                     <h2>Monoculaire visie</h2> 
                 </a>
-                <button href=".php"></button>
+                <button href="monoculair.php"></button>
             </div>
 
             <div class="ervaring">
                 <a href="kleurenblindheid.php">
                     <h2>Kleurenblindheid</h2>
                 </a>
-                <button href=".php"></button>
+                <button href="kleurenblindheid.php"></button>
             </div>
 
             <div class="ervaring">
@@ -44,10 +44,10 @@
             </div>
 
             <div class="ervaring">
-                <a href="monoculaire-visie.php">
+                <a href="monoculair.php">
                     <h2>Ervaar ze allemaal</h2>
                 </a>
-                <button href=".php"></button>
+                <button href="monoculair.php"></button>
             </div>
 
         </div>
