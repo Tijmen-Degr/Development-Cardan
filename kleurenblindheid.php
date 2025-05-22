@@ -49,18 +49,22 @@
 
         </section>
         
-        <section class="simulatie">
-            <section class="simulatie-text">
-            <h2>Ervaar hoe het is om met kleurenblindheid te shoppen</h2>
-            <p> Probeer met deze beperking de </p>
-            </section>
-        <div class="ervaring-visualisatie">
-            <div class="monoculair-vision"></div>
-            <a href="kleurenblind_simulatie.php" class="find-item-button">Druk hier om te beginnen!</a>
-        </div>
-
-        <?php include 'footer.php';?>
-        </section>
+        <section class="experience">
+      <div class="experience-text">
+        <h1>Ervaring: Stel de outfit samen</h1>
+        <p>
+          Deze ervaring is heel simpel, stel de aangegeven outfit samen terwijl je kleurenblind bent.
+        </p>
+        <a href="kleurenblind_simulatie.php" class="start-experience">
+          <button id="toggle-button" class="start-btn">Start de ervaring</button>
+        </a>
+      </div>
+      <div class="experience-visual">
+        <img src="images/Stylezz-KB.png" alt="Bestelervaring" width="300" />
+      </div>
+    </section>
+    <h1></h1>
+   <?php include 'footer.php';?>
     </main>
 </body>
 </html>

@@ -49,18 +49,23 @@
 
         </section>
         
-        <section class="simulatie">
-            <section class="simulatie-text">
-            <h2>Ervaar hoe het is om met monoculaire visie te shoppen</h2>
-            <p> Probeer hier de ... (kledingstuk) te vinden </p>
-            </section>
-        <div class="ervaring-visualisatie">
-            <div class="monoculair-vision"></div>
-            <a href="mono_simulatie.php" class="find-item-button">Druk hier om te beginnen!</a>
-        </div>
-
+       <section class="experience">
+      <div class="experience-text">
+        <h1>Ervaring: Voltooi de opdrachten</h1>
+        <p>
+          Deze ervaring is heel simpel, voltooi de opdrachten die je krijgt. terwijl je zicht waziger wordt.
+        </p>
+        <a href="mono_simulatie.php" class="start-experience">
+          <button id="toggle-button" class="start-btn">Start de ervaring</button>
+        </a>
+      </div>
+      <div class="experience-visual">
+        <img src="images/StyleZZ-Blur.png" alt="Bestelervaring" width="300" />
+      </div>
+    </section>
+    <h1></h1>
         <?php include 'footer.php';?>
-        </section>
+   
     </main>
 </body>
 </html>
