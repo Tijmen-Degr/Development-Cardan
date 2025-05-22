@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+.ervaringen-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    margin: 6em 0 10em;
+    align-items: center;
+}
+
+.ervaring {
+    text-align: center;
+}
+
+.ervaring h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.ervaring button {
+    border: 1px solid #33333371;
+    border-radius: 15px;
+    padding: 7px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Breedte van de knop */
+    background-color: #0f9e56; /* Groen */
+    color: white;
+}
+
+.ervaring button:hover {
+    color: #333;
+    background-color: white;
+}
+
+.welkom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; 
+    margin: 0 auto;
+    width: 100%;
+    row-gap: 60px;
+}
+
+.welkom h1 {
+    font-size: 2.5em;
+    padding: 0 4em;
+}
+
+
+.cardan-vorm {
+  background-position: left center; 
+  background-repeat: no-repeat;
+  display: block; 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -50px; 
+  pointer-events: none; 
+  z-index: -1;
+}
+
+@media only screen and (min-width: 4000px) {
+  body {
+   background-image: url('../images/ken-jeong-cant-see-this.png');
+  }
+}
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.collapsible {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  color: #0f9e56;
+  margin-bottom: 0.5em;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.collapsible.active .arrow {
+  transform: rotate(90deg);
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  border-left: 3px solid #0f9e56;
+  padding-left: 1em;
+}
+
+.content.open {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.beperking p,
+.beperking h2 {
+    text-align: left;
+}
