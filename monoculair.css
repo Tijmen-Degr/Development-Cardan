@@ -1,0 +1,162 @@
+h1 {
+    font-size: 2.5em;
+    padding: 3em 4em 1em 4em;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em 0 4em;
+    gap: 1em; 
+}
+
+.intro-text, .simulatie-text {
+    flex: 1;
+    padding: 2em 0;
+}
+
+.simulatie {
+    text-align: center;
+}
+
+.monoculair-image, .ervaring-visualisatie {
+    flex: 1; 
+    text-align: center;
+}
+
+.monoculair-image img, .ervaring-visualisatie img {
+    max-width: 38vw;
+    height: auto;
+    margin-right: 6em;
+}
+
+.find-item-button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #0f9e56;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    border: 1px solid #33333371;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto; 
+    background-color: #0f9e56;
+    color: white;
+}
+
+.informatie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: auto; 
+    margin: 4em auto;
+    padding: 4em 0;
+    width: 100%;
+    row-gap: 60px;
+    background-color: #E6F7EA;
+    column-gap: 20px;
+}
+
+.informatie-text {
+    flex: 2;
+    text-align: left;
+    padding: 0 6em;
+    margin: 0 auto;
+}
+
+.informatie-text,
+.informatie-text h2,
+.informatie-text p {
+    text-align: left;
+}
+
+.oorzaken {
+    flex: 1;
+    padding: 2em 0;
+    margin: 0 auto;
+}
+
+.oorzaken ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.start-experience {
+  text-decoration: none; 
+}
+
+.start-btn,
+.cta-button,
+.toggle-btn {
+  background-color: #007f3f; 
+  color: white; 
+  border: none; 
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  margin-top: 1rem; 
+  display: block; 
+  margin-left: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  gap: 20px;
+}
+
+.experience-visual {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-visual img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.experience h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.experience p {
+  max-width: 500px;
+  text-align: left;
+}
+.experience-text {
+  text-align: left;
+  align-self: flex-start;
+}
+.experience .experience-text h1,
+.experience .experience-text p {
+  text-align: left !important;
+  padding: 0; 
+}
