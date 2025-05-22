@@ -127,7 +127,7 @@
     &copy; 2025 ALTWEAR. Underground gear for the fearless.
 </footer>
 
-<div id="completionScreen">
+<div id="completionScreen" style="display:none;">
   <h2 style="color:white;">Gefeliciteerd! Je hebt 5 keer goed geraden!</h2>
   <button id="restartBtn">Opnieuw spelen</button>
   <button id="backBtn">Terug naar uitleg</button>
@@ -167,30 +167,33 @@ document.addEventListener('DOMContentLoaded', function() {
         product.setAttribute('data-prijs', prijs);
     });
 
-    // Genereer een willekeurige opdracht
+    // Functie om een nieuwe opdracht te genereren
     let opdrachtType, opdrachtWaarde;
-    const opdrachten = [
-        () => {
-            opdrachtType = 'maat';
-            opdrachtWaarde = maten[Math.floor(Math.random() * maten.length)];
-            return `Zoek de shirts met maat <b>${opdrachtWaarde}</b>`;
-        },
-        () => {
-            opdrachtType = 'laagste-prijs';
-            let prijzen = producten.map(p => parseFloat(p.getAttribute('data-prijs')));
-            opdrachtWaarde = Math.min(...prijzen).toFixed(2);
-            return `Zoek het shirt met de <b>laagste prijs</b>`;
-        },
-        () => {
-            opdrachtType = 'hoogste-prijs';
-            let prijzen = producten.map(p => parseFloat(p.getAttribute('data-prijs')));
-            opdrachtWaarde = Math.max(...prijzen).toFixed(2);
-            return `Zoek het shirt met de <b>hoogste prijs</b>`;
-        }
-    ];
-    const opdracht = opdrachten[Math.floor(Math.random() * opdrachten.length)]();
+    function nieuweOpdracht() {
+        const opdrachten = [
+            () => {
+                opdrachtType = 'maat';
+                opdrachtWaarde = maten[Math.floor(Math.random() * maten.length)];
+                return `Zoek de shirts met maat <b>${opdrachtWaarde}</b>`;
+            },
+            () => {
+                opdrachtType = 'laagste-prijs';
+                let prijzen = producten.map(p => parseFloat(p.getAttribute('data-prijs')));
+                opdrachtWaarde = Math.min(...prijzen).toFixed(2);
+                return `Zoek het shirt met de <b>laagste prijs</b>`;
+            },
+            () => {
+                opdrachtType = 'hoogste-prijs';
+                let prijzen = producten.map(p => parseFloat(p.getAttribute('data-prijs')));
+                opdrachtWaarde = Math.max(...prijzen).toFixed(2);
+                return `Zoek het shirt met de <b>hoogste prijs</b>`;
+            }
+        ];
+        const opdracht = opdrachten[Math.floor(Math.random() * opdrachten.length)]();
+        document.getElementById('opdracht').innerHTML = opdracht;
+    }
 
-    document.getElementById('opdracht').innerHTML = opdracht;
+    nieuweOpdracht();
 
     // Maak alle producten klikbaar en geef feedback
     producten.forEach(function(product) {
@@ -211,13 +214,14 @@ document.addEventListener('DOMContentLoaded', function() {
             if (goed) {
                 product.style.border = "4px solid #2ecc40";
                 goedCount++;
-                if (goedCount >= 5) {
+                if (goedCount >= 5) { 
                     setTimeout(() => {
                         document.getElementById('completionScreen').style.display = 'flex';
                     }, 600);
                 } else {
                     setTimeout(() => {
-                        window.location.reload();
+                        producten.forEach(p => p.style.border = '');
+                        nieuweOpdracht(); // Nieuwe opdracht na goed antwoord
                     }, 800);
                 }
             } else {
@@ -225,8 +229,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
 
+    document.getElementById('restartBtn').addEventListener('click', function() {
+        goedCount = 0;
+        document.getElementById('completionScreen').style.display = 'none';
+        window.location.reload();
+    });
+    document.getElementById('backBtn').addEventListener('click', function() {
+        window.location.href = 'monoculair.php';
+    });
 
     // Dynamische blur op main
     let blur = 0;
@@ -234,19 +245,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const main = document.querySelector('main');
     setInterval(() => {
         if (blur < maxBlur) {
-            blur += 0.2; // verhoog blur elke seconde
+            blur += 0.11; // verhoog blur elke seconde
             main.style.filter = `blur(${blur}px)`;
         }
     }, 1000);
-
-    document.getElementById('restartBtn').addEventListener('click', function() {
-    goedCount = 0;
-    document.getElementById('completionScreen').style.display = 'none';
-    window.location.reload();
-    });
-    document.getElementById('backBtn').addEventListener('click', function() {
-        window.location.href = 'monoculair.php';
-    });
+});
 </script>
 
 </body>

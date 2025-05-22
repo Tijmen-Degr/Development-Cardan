@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monoculaire visie Ervaring</title>
-  <link rel="stylesheet" href="css/monoculair.css">
+  <link rel="stylesheet" href="css/kleurenblindheid.css">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             </section>
         <div class="ervaring-visualisatie">
             <div class="monoculair-vision"></div>
-            <a href="mono_simulatie.php" class="find-item-button">Druk hier om te beginnen!</a>
+            <a href="kleurenblind_simulatie.php" class="find-item-button">Druk hier om te beginnen!</a>
         </div>
 
         <?php include 'footer.php';?>
