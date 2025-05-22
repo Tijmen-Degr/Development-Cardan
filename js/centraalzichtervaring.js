@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const juisteProduct = "zombie";
     const maten = ['S', 'M', 'L'];
     const minPrijs = 19.95;
     const maxPrijs = 29.99;
 
     const grid = document.querySelector('.product-grid');
-    const producten = Array.from(grid.querySelectorAll('.product'));
+    let producten = Array.from(grid.querySelectorAll('.product'));
+    let goedCount = 0;
+    let processingClick = false; // ⛔️ voorkomt dubbelklikken
 
-    // Shuffle producten (betere aanpak)
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -15,76 +17,92 @@ document.addEventListener('DOMContentLoaded', function () {
         return array;
     }
 
-    const shuffled = shuffleArray(producten);
-    grid.innerHTML = '';
-    grid.append(...shuffled);
+    function randomiseerProducten() {
+        producten = shuffleArray(producten);
+        grid.innerHTML = '';
+        grid.append(...producten);
 
-    // Geef elke product een random maat en prijs
-    producten.forEach(function (product) {
-        const maat = maten[Math.floor(Math.random() * maten.length)];
-        const prijs = (Math.random() * (maxPrijs - minPrijs) + minPrijs).toFixed(2);
+        producten.forEach(function (product) {
+            const maat = maten[Math.floor(Math.random() * maten.length)];
+            const prijs = (Math.random() * (maxPrijs - minPrijs) + minPrijs).toFixed(2);
 
-        let h3 = product.querySelector('h3');
-        if (h3) {
-            h3.textContent += ` (maat ${maat})`;
-        }
+            const h3 = product.querySelector('h3');
+            if (h3) {
+                const origineleNaam = h3.getAttribute('data-origineel');
+                h3.textContent = `${origineleNaam} (maat ${maat})`;
+            }
 
-        let p = product.querySelector('p');
-        if (p) {
-            p.textContent = `€${prijs}`;
-        }
+            const p = product.querySelector('p');
+            if (p) {
+                p.textContent = `€${prijs}`;
+            }
 
-        product.setAttribute('data-maat', maat);
-        product.setAttribute('data-prijs', prijs);
-    });
+            product.setAttribute('data-maat', maat);
+            product.setAttribute('data-prijs', prijs);
+        });
 
-    // Extra knoppen controleren
-    const restartBtn = document.getElementById('restartBtn');
-    if (restartBtn) {
-        let goedCount = 0;
-        restartBtn.addEventListener('click', function () {
-            goedCount = 0;
-            const completion = document.getElementById('completionScreen');
-            if (completion) completion.style.display = 'none';
-            window.location.reload();
+        koppelBestelKnoppen(); // opnieuw koppelen na shuffle
+    }
+
+    function koppelBestelKnoppen() {
+        const knoppen = document.querySelectorAll('.bestel-btn');
+
+        knoppen.forEach(function (knop) {
+            const nieuweKnop = knop.cloneNode(true); // verwijder oude event listeners
+            knop.parentNode.replaceChild(nieuweKnop, knop); // vervang met schone knop
+
+            nieuweKnop.addEventListener('click', function () {
+                if (processingClick) return; // ⛔️ blokkeer dubbele klik
+                processingClick = true;
+
+                const product = this.closest('.product');
+                const code = product.getAttribute('data-product');
+
+                if (code === juisteProduct) {
+                    if (goedCount === 2) {
+                        goedCount++;
+                        document.getElementById('completionScreen').style.display = 'block';
+                        window.scrollTo(0, 0);
+                    } else {
+                        goedCount++;
+                        alert(`Goed! Je hebt ${goedCount} van de 3 juiste producten besteld.`);
+                        setTimeout(() => {
+                            randomiseerProducten();
+                            processingClick = false;
+                        }, 300); // even delay zodat DOM klaar is
+                    }
+                } else {
+                    alert("Fout! Dit is niet het juiste shirt.");
+                    processingClick = false;
+                }
+            });
         });
     }
 
-    const backBtn = document.getElementById('backBtn');
-    if (backBtn) {
-        backBtn.addEventListener('click', function () {
+    // Sla originele namen op
+    producten.forEach(product => {
+        const h3 = product.querySelector('h3');
+        if (h3 && !h3.hasAttribute('data-origineel')) {
+            h3.setAttribute('data-origineel', h3.textContent.replace(/\(.*\)/, '').trim());
+        }
+    });
+
+    randomiseerProducten();
+
+    const restartBtn = document.getElementById('restartBtn');
+    if (restartBtn) {
+        restartBtn.addEventListener('click', function () {
+            goedCount = 0;
+            document.getElementById('completionScreen').style.display = 'none';
+            window.scrollTo(0, 0);
+            randomiseerProducten();
+        });
+    }
+
+    const terugKnop = document.querySelector('.button-link');
+    if (terugKnop) {
+        terugKnop.addEventListener('click', function () {
             window.location.href = 'centraalzicht.php';
         });
     }
-});
-document.addEventListener('DOMContentLoaded', function () {
-  const juisteProduct = "zombie";
-  const knoppen = document.querySelectorAll('.bestel-btn');
-
-  knoppen.forEach(function (knop) {
-    knop.addEventListener('click', function () {
-      const product = this.closest('.product');
-      const code = product.getAttribute('data-product');
-
-      if (code === juisteProduct) {
-        document.getElementById('completionScreen').style.display = 'block';
-        window.scrollTo(0, 0);
-      } else {
-        alert("Fout! Dit is niet het juiste shirt.");
-      }
-    });
-  });
-
-  // Knop gedrag
-  document.getElementById('restartBtn').addEventListener('click', function () {
-    document.getElementById('completionScreen').style.display = 'none';
-    window.scrollTo(0, 0);
-  });
-
-  const terugKnop = document.querySelector('.button-link');
-  if (terugKnop) {
-    terugKnop.addEventListener('click', function () {
-      window.location.href = 'centraalzicht.php';
-    });
-  }
 });

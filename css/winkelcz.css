@@ -132,10 +132,11 @@ footer {
 .button-link:hover {
   background-color: #005f2e;
 }
+.restart-btn
 #completionScreen button:hover {
   background-color: #005f2e;
 }
-
+.restart-btn
 #completionScreen button {
   background-color: #007f3f;
   color: white;
@@ -148,8 +149,26 @@ footer {
   min-width: 200px;
   transition: background-color 0.2s ease;
 }
-
+.restart-btn
 #completionScreen button:hover {
+  background-color: #005f2e;
+}
+.button-link {
+  background-color: #007f3f;
+  color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1rem 1rem;
+  min-width: 200px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.button-link:hover {
   background-color: #005f2e;
 }
 
