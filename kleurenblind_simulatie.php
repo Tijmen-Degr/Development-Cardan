@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ALTWEAR - Underground Webshop</title>
-  <link rel="stylesheet" href="css/winkel.css" />
+  <link rel="stylesheet" href="css/kleurenblind_simulatie.css" />
 </head>
 <body>
 
@@ -85,7 +85,7 @@
 <div class="product" data-kleur="rood" data-type="shirt">
     <img src="images/producten/FFDP_Zombie_Kill_Xmas_Red.jpg" alt="Five Finger Death Punch 'Zombie Kill Xmas' (Red) T-Shirt" />
     <h3>"Five Finger Death Punch 'Zombie Kill Xmas'T-Shirt"</h3>
-    <p>€22,50</p>
+    <p>€23,76</p>
 </div>
 
 <div class="product" data-kleur="paars" data-type="shirt">
@@ -97,55 +97,55 @@
 <div class="product" data-kleur="groen" data-type="shirt">
     <img src="images/producten/T-shirts-Flogging-Molly-Flogging-Molly-T-shirt-Vintage.jpg" alt=" Flogging Molly T-shirt Vintage" />
     <h3>" Flogging Molly T-shirt Vintage Irish Punk"</h3>
-    <p>€22,50</p>
+    <p>€25,50</p>
 </div>
 
 <div class="product" data-kleur="roze" data-type="shirt">
     <img src="images/producten/death_metal.jpg" alt="Death metal shirt" />
     <h3>"Death Metal Unicorn" T-shirt lichtroze van Tierisch"</h3>
-    <p>€22,50</p>
+    <p>€25,46</p>
 </div>
 
 <div class="product" data-kleur="geel" data-type="broek">
     <img src="images/producten/cargo_geel.jpg" alt="Gele cargo broek kort" />
     <h3>"Korte cargo broek"</h3>
-    <p>€22,50</p>
+    <p>€22,89</p>
 </div>
 
 <div class="product" data-kleur="groen" data-type="broek">
     <img src="images/producten/cargo_groen.jpg" alt="Groene cargo broek kort" />
     <h3>"Korte cargo broek"</h3>
-    <p>€22,50</p>
+    <p>€18,45</p>
 </div>
 
 <div class="product" data-kleur="oranje" data-type="broek">
     <img src="images/producten/cargo_oranje.jpg" alt="Oranje cargo broek kort" />
     <h3>"Korte cargo broek"</h3>
-    <p>€22,50</p>
+    <p>€28,47</p>
 </div>
 
 <div class="product" data-kleur="paars" data-type="broek">
     <img src="images/producten/cargo_paars.jpg" alt="Paarse cargo broek kort" />
     <h3>"Korte cargo broek"</h3>
-    <p>€22,50</p>
+    <p>€27,12</p>
 </div>
 
 <div class="product" data-kleur="rood" data-type="broek">
     <img src="images/producten/cargo_rood.jpg" alt="Rode cargo broek kort" />
     <h3>"Korte cargo broek"</h3>
-    <p>€22,50</p>
+    <p>€29,32</p>
 </div>
 
 <div class="product" data-kleur="zwart" data-type="broek">
     <img src="images/producten/cargo_zwart.webp" alt="Zwarte cargo broek" />
     <h3>"Korte cargo broek"</h3>
-    <p>€22,50</p>
+    <p>€26,78</p>
 </div>
 
 <div class="product" data-kleur="groen" data-type="shirt">
     <img src="images/producten/green_day.webp" alt="Green Day shirt" />
     <h3>"Green Day T-shirt"</h3>
-    <p>€22,50</p>
+    <p>€23,66</p>
 </div>
 
 <div class="product" data-kleur="geel" data-type="shirt">
@@ -157,7 +157,13 @@
 <div class="product" data-kleur="blauw" data-type="shirt">
     <img src="images/producten/dropkick_murphys.jpg" alt="Dropkick Murphys shirt" />
     <h3>"Fist Up" T-shirt van Dropkick Murphys</h3>
-    <p>€22,50</p>
+    <p>€24,70</p>
+</div>
+
+<div class="product" data-kleur="blauw" data-type="broek">
+    <img src="images/producten/cargo_roze.jpg" alt="Roze cargo broek kort" />
+    <h3>"Korte cargo broek"</h3>
+    <p>€19,50</p>
 </div>
 
     </section>
@@ -170,7 +176,7 @@
 <div id="completionScreen">
   <h2 style="color:white;">Gefeliciteerd! Je hebt 5 keer goed geraden!</h2>
   <button id="restartBtn">Opnieuw spelen</button>
-  <button id="backBtn">Terug naar uitleg</button>
+<a id="backBtn" href="kleurenblindheid.php" class="completion-btn">Terug naar uitleg</a>
 </div>
 
 <script src="js/kleurenblindheid.js"></script>

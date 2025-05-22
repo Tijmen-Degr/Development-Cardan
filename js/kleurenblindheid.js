@@ -2,8 +2,9 @@ let goedCount = 0;
 let gekozenVorm = null;
 let selectie = [];
 let huidigeOpdracht = null;
-let grid; // globaal
-let producten; // globaal
+let grid;
+let producten; 
+const toegestaneKleuren = ["geel", "groen", "rood", "zwart", "paars", "beige", "oranje", "blauw", "roze"];
 
 function shuffleProducten() {
     for (let i = producten.length - 1; i > 0; i--) {
@@ -38,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
 function uniekeKleuren(type) {
-    // Geef een lijst van unieke kleuren voor het gegeven type (broek of shirt)
     const kleuren = new Set();
     producten.forEach(p => {
         if (p.getAttribute('data-type') === type) {
@@ -52,18 +52,17 @@ function nieuweOpdracht() {
     selectie = [];
     producten.forEach(p => p.style.outline = '');
 
-    // Kies willekeurig broek of shirt
-    const types = ['broek', 'shirt'];
-    const gekozenType = types[Math.floor(Math.random() * types.length)];
-    const kleuren = uniekeKleuren(gekozenType);
+    const broekKleuren = uniekeKleuren('broek');
+    const shirtKleuren = uniekeKleuren('shirt');
 
-    // Kies een willekeurige kleur die voorkomt bij dat type
-    const gekozenKleur = kleuren[Math.floor(Math.random() * kleuren.length)];
+    const gekozenBroekKleur = broekKleuren[Math.floor(Math.random() * broekKleuren.length)];
+    const gekozenShirtKleur = shirtKleuren[Math.floor(Math.random() * shirtKleuren.length)];
 
     huidigeOpdracht = {
-        tekst: `Zoek een ${gekozenKleur} ${gekozenType}!`,
+        tekst: `Zoek een broek met de kleur <b>${gekozenBroekKleur}</b> en een shirt met de kleur <b>${gekozenShirtKleur}</b>!`,
         oplossing: [
-            { kleur: gekozenKleur, type: gekozenType }
+            { kleur: gekozenBroekKleur, type: "broek" },
+            { kleur: gekozenShirtKleur, type: "shirt" }
         ]
     };
     document.getElementById('opdracht').innerHTML = huidigeOpdracht.tekst;
@@ -100,7 +99,7 @@ function nieuweOpdracht() {
 
         if (juist) {
             goedCount++;
-            if (goedCount >= 5) {
+            if (goedCount >= 2) {
                 document.getElementById('completionScreen').style.display = 'flex';
             } else {
                 alert("Goed gedaan! Nieuwe opdracht.");
@@ -156,4 +155,11 @@ document.getElementById('opnieuwBtn').onclick = function() {
     goedCount = 0;
     nieuweOpdracht();
 };
+
+document.getElementById('restartBtn').onclick = function() {
+location.reload();
+};
+    document.getElementById('backBtn').addEventListener('click', function() {
+        window.location.href = 'kleurenblindheid.php';
+    });
 });
