@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   cartLink.addEventListener("click", function (e) {
     e.preventDefault();
     clicks++;
-    if (clicks < 5) {
+    if (clicks < 7) {
       moveCartRandomly();
     } else {
       showCompletionScreen();
