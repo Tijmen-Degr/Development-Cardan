@@ -26,7 +26,7 @@
       <div class="experience-text">
         <h1>Ervaring: Navigeer de website</h1>
         <p>
-          Deze ervaring is heel simpel, probeer het rood-zwarte shirt te zoeken en te kopen, het enige wat je hindert in je zoektocht is het vervagen/verlies van je centrale zicht.
+          Deze ervaring is heel simpel, probeer het rode kerst shirt te zoeken en te kopen, het enige wat je hindert in je zoektocht is het vervagen/verlies van je centrale zicht.
            Probeer met deze beperking op de bestel knop te klikken. 
         </p>
         <a href="centraalzichtwinkel.php" class="start-experience">
