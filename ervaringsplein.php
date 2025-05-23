@@ -13,42 +13,7 @@
     <?php include 'header.php' ?>
     </header>
     
-   <div class="ervaringen-container">
 
-    <div class="ervaring">
-        <a href="monoculair.php">
-            <h2>Monoculaire visie</h2> 
-        </a>
-        <button onclick="location.href='monoculair.php'"></button>
-    </div>
-
-    <div class="ervaring">
-        <a href="kleurenblindheid.php">
-            <h2>Kleurenblindheid</h2>
-        </a>
-        <button onclick="location.href='kleurenblindheid.php'"></button>
-    </div>
-
-    <div class="ervaring">
-        <a href="centraalzicht.php">
-            <h2>Centraal zicht</h2>
-        </a>
-        <button onclick="location.href='centraalzicht.php'"></button>
-    </div>
-
-    <div class="ervaring">
-        <a href="kokervisie.php">
-            <h2>Kokervisie</h2>
-        </a>
-        <button onclick="location.href='kokervisie.php'"></button>
-    </div>
-
-    <div class="ervaring">
-        <a href="monoculaire-visie.php">
-            <h2>Ervaar ze allemaal</h2>
-        </a>
-        <button onclick="location.href='monoculair.php'"></button>
-    </div>
 
 </div>
 
@@ -163,7 +128,7 @@
     });
   });
 </script>
-
+<?php include 'footer.php'; ?> 
 
     </body>
 </html>

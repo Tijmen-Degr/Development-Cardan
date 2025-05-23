@@ -6,13 +6,6 @@
   </div>
   <p>&copy; <?php echo date("Y"); ?> Cardan - Alle rechten voorbehouden.</p>
 <style>
-
-.main-footer {
-  background-color: #f8f9fa;
-  padding: 80px 0 40px;
-  text-align: center;
-}
-
   .slider-container {
     max-width: 400px;
     margin: 1rem auto;
@@ -24,21 +17,21 @@
     justify-content: space-between;
     position: relative;
     font-weight: 600;
-    font-size: 1rem; 
+    font-size: 1rem; /* Iets kleiner dan 1.1rem */
     user-select: none;
   }
   .slider-label {
     flex: 1;
-    max-width: 40%;
+    max-width: 40%; /* max 40% breedte per label */
     padding: 0 10px;
     text-align: center;
     color: #444;
     user-select: none;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis; /* tekst afkappen met ... als het te lang is */
     transition: color 0.3s ease;
-    font-size: 0.9rem; 
+    font-size: 0.9rem; /* iets kleiner font */
   }
   .slider-label:hover {
     color: #000;
@@ -61,16 +54,6 @@
     box-shadow: 0 0 6px rgba(0,0,0,0.3);
     transition: left 0.3s ease;
   }
-
-  .darkmode   .slider-container {
-    background-color: #120817;
-    color: #fff;
-}
-
-.darkmode .main-footer {
-    background-color: #120817;
-    color: #fff;
-}
 </style>
 
 
@@ -81,7 +64,14 @@
     const leftLabel = document.getElementById("leftLabel");
     const rightLabel = document.getElementById("rightLabel");
 
+    
     const pageConfigs = {
+         "/ervaringsplein.php": {
+        leftLabel: " ⬅ Kokervisie",
+        leftUrl: "kokervisie.php",
+        rightLabel: "Monoculair ➡",
+        rightUrl: "monoculair.php"
+      },
       "/monoculair.php": {
         leftLabel: "🏠 Ervaringsplein",
         leftUrl: "ervaringsplein.php",
@@ -116,11 +106,13 @@
       rightUrl: "#"
     };
 
+    // Set labels & urls
     leftLabel.textContent = config.leftLabel;
     leftLabel.dataset.url = config.leftUrl;
     rightLabel.textContent = config.rightLabel;
     rightLabel.dataset.url = config.rightUrl;
 
+    // Click navigatie op labels
     leftLabel.addEventListener("click", () => {
       if(config.leftUrl && config.leftUrl !== "#") {
         window.location.href = config.leftUrl;
@@ -197,23 +189,5 @@
     document.addEventListener("touchmove", (e) => duringDrag(e.touches[0].clientX));
     document.addEventListener("touchend", endDrag);
   });
-
-function switchmode() {
-    var element = document.body;
-    element.classList.toggle("darkmode");
-
-    // Get the button element
-    var button = document.querySelector('.darkORlight');
-    var logo = document.querySelector('.logo');
-
-    // Change the image based on the current mode
-    if (element.classList.contains("darkmode")) {
-        button.src = "images/darkmode_moon.png";
-        logo.src = "images/cardan-logo-darkmode.png";  
-    } else {
-        button.src = "images/lightmode_sun.png"; 
-        logo.src = "images/cardan-logo.png";
-    }
-}
   </script>
 </footer>
