@@ -64,7 +64,7 @@
             </nav>
         </header>
 
-           <div class="ervaringen-container">
+<div class="ervaringen-container">
 
     <div class="ervaring">
         <a href="monoculair.php">
@@ -98,24 +98,22 @@
 
 </div>
 
-        <script>
-function switchmode() {
-    var element = document.body;
-    element.classList.toggle("darkmode");
+<script>
+    function switchmode() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
 
-    // Get the button element
-    var button = document.querySelector('.darkORlight');
-    var logo = document.querySelector('.logo');
+        var button = document.querySelector('.darkORlight');
+        var logo = document.querySelector('.logo');
 
-    // Change the image based on the current mode
-    if (element.classList.contains("darkmode")) {
-        button.src = "images/darkmode_moon.png";
-        logo.src = "images/cardan-logo-darkmode.png";  
-    } else {
-        button.src = "images/lightmode_sun.png"; 
-        logo.src = "images/cardan-logo.png";
+        if (element.classList.contains("darkmode")) {
+            button.src = "images/darkmode_moon.png";
+            logo.src = "images/cardan-logo-darkmode.png";  
+        } else {
+            button.src = "images/lightmode_sun.png"; 
+            logo.src = "images/cardan-logo.png";
+        }
     }
-}
 </script>
 
 </body>

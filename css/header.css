@@ -273,3 +273,39 @@ html, body {
    margin: 0;
    padding: 0;
 }
+
+.ervaringen-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 6em 0 10em;
+    padding: 6em;
+}
+
+.ervaring {
+    text-align: center;
+}
+
+.ervaring h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.ervaring button {
+    border: 1px solid #33333371;
+    border-radius: 15px;
+    padding: 7px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Breedte van de knop */
+    background-color: #0f9e56; /* Groen */
+    color: white;
+}
+
+.ervaring button:hover {
+    color: #333;
+    background-color: white;
+}
